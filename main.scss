@@ -1,0 +1,189 @@
+$red: #dd5555;
+$hoverred: #dd3333;
+$bgcolor: #ebebeb;
+$textgrey: #817d8e;
+$linkcolor: #d0d0d0;
+$white: white;
+
+$big: 33.325px;
+$medium: 25px;
+$small: 18.775px;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Awesome;
+    src: url(https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css);
+}
+
+body{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: $bgcolor;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 80%;
+    grid-gap: 25px;
+    justify-content: center;
+    align-content: center;
+}
+
+header {
+    background: $white;
+    color: $textgrey;
+    padding: 5%;
+    margin-top: 5%;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    //font-family: Arial, Helvetica, sans-serif;
+    font-family: 'century gothic';
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+nav {
+    background: $white;
+    color: $linkcolor;
+    padding: 5%;
+    text-align: center;
+    font-family: 'century gothic';
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 2.5%;
+    grid-template-columns: 25% 25% 25%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#movies {
+    background: $white;
+    color: $textgrey;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'century gothic';
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 5%;
+}
+
+#profilePic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 3px solid $linkcolor;
+}
+
+h1 {
+    color: $red;
+    font-size: $big;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+h2 {
+    grid-column: 1/-1;
+    font-size: $medium;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: justify;
+}
+
+#CUrself {
+    border: none;
+    outline: none;
+    background-color: $red;
+    color: $white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 2px;
+}
+
+#CUrself:hover {
+    background-color: $hoverred;
+}
+
+a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: $linkcolor;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14.1px;
+}
+
+a:hover {
+    color: $textgrey;
+    
+    i {
+        color: $textgrey;
+    }
+}
+
+.logo {
+    width: $big;
+}
+
+.moviepic {
+    margin-top: 30px;
+    padding-left: 30px;
+    width: 66%;
+    height: auto;
+}
+
+.flex-div {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: 30% 70%;
+    grid-row-gap: 25px;
+}
+
+#movietitle {
+    margin-bottom: 25px;
+}
+
+mark {
+    background-color: $linkcolor;
+    color: $textgrey;
+}
+
+i {
+    color: $linkcolor;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        grid-template-columns: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .moviepic {
+        grid-column: 1/-1;
+        width: 150px;
+        margin-left: 17%;
+    }
+
+    .movie-info {
+        grid-column: 1/-1;
+    }
+}
+
